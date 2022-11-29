@@ -1,0 +1,38 @@
+﻿Console.Clear();
+int xa = 25, ya = 20,
+    xb = 1,  yb = 30,
+    xc = 50, yc = 30;
+    Console.SetCursorPosition(xa,ya);
+    Console.WriteLine("+");
+    Console.SetCursorPosition(xb,yb);
+    Console.WriteLine("+");
+    Console.SetCursorPosition(xc,yc);
+    Console.WriteLine("+");
+
+  int x = xa, y = xb;
+
+   for (int i = 0; i <10000; i++) {
+    int casualnumber = new Random().Next(0,3);
+      
+       if (casualnumber==0)
+        {
+        x = (x + xa) / 2;
+        y = (y + ya) / 2;
+        Console.SetCursorPosition(x,y);
+       Console.WriteLine("+");
+       }
+       if (casualnumber==1) 
+       {
+        x = (x + xb) / 2;
+        y = (y + yb) / 2;
+        Console.SetCursorPosition(x,y);
+       Console.WriteLine("+");
+       }
+       if (casualnumber==2) 
+       {
+        x = (x + xc) / 2;
+        y = (y + yc) / 2;
+        Console.SetCursorPosition(x,y);
+       Console.WriteLine("+");
+       }
+   }
